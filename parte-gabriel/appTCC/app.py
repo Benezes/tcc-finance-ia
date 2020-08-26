@@ -27,6 +27,6 @@ df.to_csv(r'yah-finance.csv', index=None)
 
 ds = pd.read_csv('yah-finance.csv')
 
-columnDate = pd.to_datetime(df['date'], unit='s')
+columnDate = pd.to_datetime(ds['date'], unit='s')
 columnOpen = ds.iloc[:, 1:2].values
 columnClose = ds.iloc[:, 4:5].values
