@@ -27,23 +27,6 @@ df.to_csv(r'yah-finance.csv', index=None)
 
 ds = pd.read_csv('yah-finance.csv')
 
-columnDate = ds.iloc[:, :1].values
+columnDate = pd.to_datetime(df['date'], unit='s')
 columnOpen = ds.iloc[:, 1:2].values
 columnClose = ds.iloc[:, 4:5].values
-
-def converteData():
-    '''
-        Função que converte um Epoch & Unix Timestamp para datetime.
-        Como eu recebo uma lista de datas com o formato timestamp 
-        retorno uma lista no formato datetime.
-    '''
-    lst = []
-    for data in columnDate:
-        datas = datetime.fromtimestamp(data)
-        lst.append(str(datas))
-    return lst
-
-colunaData = np.asarray(converteData())
-print(colunaData)
-print(columnDate)
-
