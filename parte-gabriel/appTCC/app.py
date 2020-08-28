@@ -3,7 +3,6 @@
 %pip install requests
 %pip install pandas
 %pip install numpy
-%pip install install Quandl
 %pip install scikit-learn
 '''
 
