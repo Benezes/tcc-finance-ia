@@ -33,7 +33,7 @@ acao = "AMZN"
 querystring = {"frequency": "1d", "filter": "history",
                "period1": periodo1, "period2": periodo2, "symbol": acao}
  
-key = "5ff9fb4e8fmsh9d016c18191002fp1d1248jsn149d5adf2e0e"
+key = ""
 headers = {
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com",
     'x-rapidapi-key': key
